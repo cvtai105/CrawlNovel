@@ -4523,11 +4523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cvtai\\OneDrive\\Desktop\\NovelaholicBackend\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\cvtai\\OneDrive\\Desktop\\CrawlNovel\\NovelaholicBackend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\NovelaholicBackend\\API\\API.csproj",
+      "projectPath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\CrawlNovel\\NovelaholicBackend\\API\\API.csproj",
       "packagesPath": "C:\\Users\\cvtai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\NovelaholicBackend\\API\\obj\\",
+      "outputPath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\CrawlNovel\\NovelaholicBackend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

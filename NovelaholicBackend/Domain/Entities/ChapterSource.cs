@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Models
+namespace Domain.Entities
 {
     [PrimaryKey("ChapterId", "SourceId")]
     public class ChapterSource
@@ -14,6 +14,7 @@ namespace API.Models
         [ForeignKey("Chapter")]
         public int ChapterId { get; set; }
         [ForeignKey("Source")]
+
         public int SourceId { get; set; }
         [Required]
         public string ChapterUrl { get; set; } = string.Empty;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p1FnzFfONZJ4ncPWvPoddyUp1A0nY92g9oDpBdv6kiuShkh2uBZkXvWRxs5QKrOM4lXVQpWzBO4MjGV2Ro48lA==",
+  "dgSpecHash": "TLYUuFPGdyxQMyzvY7whDGsmAh16mSK27OYhBeLG0d3Xy77WSO2wLCrcTtIcSftzhw1GPWHBVi5I+i5B5cG2Nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\NovelaholicBackend\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\cvtai\\OneDrive\\Desktop\\CrawlNovel\\NovelaholicBackend\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cvtai\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\cvtai\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
