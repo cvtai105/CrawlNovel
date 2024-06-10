@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Common.Entities;
 
-namespace Domain.IRepository
+namespace Common.IRepository
 {
-    public class ISourceRepository
+    public interface ISourceRepository
     {
         Task<IEnumerable<Source>> GetSources();
         Task<Source> GetSource(int id);

@@ -1,12 +1,33 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Common.Entities;
+using Common.IRepository;
 
 namespace Repository
 {
-    public class NovelRepository
+    public class NovelRepository : INovelRepository
     {
-        
+        public Task<Novel> AddNovel(Novel novel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Novel> DeleteNovel(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Novel> GetNovel(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Novel>> GetNovels()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Novel> UpdateNovel(Novel novel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

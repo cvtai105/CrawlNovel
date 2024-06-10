@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Common.Entities;
 
-namespace Domain.IRepository
+namespace Common.IRepository
 {
-    public class INovelRepository
+    public interface INovelRepository
     {
         Task<IEnumerable<Novel>> GetNovels();
         Task<Novel> GetNovel(int id);

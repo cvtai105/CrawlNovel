@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Common.Entities;
 
-namespace Domain.IRepository
+namespace Common.IRepository
 {
-    public class IChapterRepository
+    public interface IChapterRepository
     {
         Task<IEnumerable<Chapter>> GetChapters();
         Task<Chapter> GetChapter(int id);
