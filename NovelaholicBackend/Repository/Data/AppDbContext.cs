@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Common.Entities;
+using Domain.Entities;
 
 namespace Repository.Data;
 public class AppDbContext : DbContext 

@@ -1,5 +1,5 @@
-using Common.Entities;
-using Common.IRepository;
+using Domain.Entities;
+using Domain.IRepository;
 
 namespace Repository
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Common.Entities
+namespace Domain.Entities
 {
     public class Chapter
     {

@@ -1,6 +1,6 @@
-using Common.Entities;
+using Domain.Entities;
 
-namespace Common.IRepository
+namespace Domain.IRepository
 {
     public interface ISourceRepository
     {

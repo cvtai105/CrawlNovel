@@ -1,16 +1,12 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
-namespace Common.Entities
+namespace Domain.Entities
 {
-    [PrimaryKey("ChapterId", "SourceId")]
     public class ChapterSource
     {
-        [ForeignKey("Chapter")]
+        [Key]
         public int ChapterId { get; set; }
-        [ForeignKey("Source")]
-
+        [Key]
         public int SourceId { get; set; }
         [Required]
         public string ChapterUrl { get; set; } = string.Empty;
