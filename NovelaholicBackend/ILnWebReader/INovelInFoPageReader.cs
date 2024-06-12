@@ -6,8 +6,8 @@ using Domain.Entities;
 
 namespace ILnWebReader
 {
-    public interface IHomePageReader
+    public interface INovelInFoPageReader
     {
-        Task<IEnumerable<Novel>> GetHotNovels();
+        Task<Novel> GetNovelInfo(string novelUrl);
     }
 }
