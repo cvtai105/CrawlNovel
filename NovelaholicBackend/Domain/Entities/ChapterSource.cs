@@ -1,15 +1,17 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Domain.ValueObjects;
 
 namespace Domain.Entities
 {
     public class ChapterSource
     {
-        [Key]
+        [ForeignKey("Chapter")]
         public int ChapterId { get; set; }
-        [Key]
+        [ForeignKey("Source")]
         public int SourceId { get; set; }
         [Required]
-        public string ChapterUrl { get; set; } = string.Empty;
+        public Url ChapterUrl { get; set; } = new Url(string.Empty);
         public Chapter Chapter { get; set; } = new Chapter();
         public Source Source { get; set; } = new Source();
     }

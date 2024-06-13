@@ -7,6 +7,7 @@ namespace ILnWebReader
 {
     public interface IContentPageReader
     {
+        Task<string> GetTitile(string contentUrl);
         Task<string> GetContent(string contentUrl);
     }
 }
