@@ -5,6 +5,6 @@ namespace ICrawler
 {
     public interface ICrawlGenres
     {
-        Task<IEnumerable<GenreDTO>> GetGenres();
+        Task<IEnumerable<string>> GetGenres();
     }
 }

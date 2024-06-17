@@ -5,6 +5,6 @@ namespace ICrawler
 {
     public interface ICrawlHotNovels
     {
-        Task<IEnumerable<HotNovelDTO>> GetHotNovels();
+        Task<IEnumerable<NovelInfoDTO>> GetHotNovels();
     }
 }
