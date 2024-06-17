@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Scraper.Contracts
+namespace CrawlerTemplate.DTOs
 {
-    public interface IScrape
+    public class HotNovelDTO : NovelBaseDTO
     {
-        Task ScrapeAsync();
+        
     }
 }

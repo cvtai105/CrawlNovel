@@ -17,9 +17,20 @@ namespace Domain.ValueObjects
             Value = value;
         }
 
-        public string GetData()
+        public async Task<string> ExtractDataAsync()
         {
-            return string.Empty;
+            using HttpClient client = new();
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(Value);
+                response.EnsureSuccessStatusCode();
+                string responseData = await response.Content.ReadAsStringAsync();
+                return responseData;
+            }
+            catch (HttpRequestException e)
+            {
+                throw new InvalidOperationException("Error fetching data from the URL", e);
+            }
         }
     }
 }

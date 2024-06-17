@@ -25,6 +25,7 @@ namespace Domain.Entities
         public int LikeCount { get; set; }
         [Column (TypeName = "decimal(3, 1)")]
         public decimal Rating { get; set; } 
+        public bool IsHot { get; set; }
 
         public List<Genre> Genres { get; set; } = new List<Genre>();
         public List<Chapter> Chapters { get; set; } = new List<Chapter>();
