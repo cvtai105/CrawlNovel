@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrawlerTemplate\CrawlerTemplate.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>

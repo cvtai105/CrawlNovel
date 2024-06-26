@@ -69,4 +69,5 @@ namespace CrawlerTemplate.Base
         }
         protected abstract IEnumerable<Novel> ParseHotNovels(string data);
     }
+
 }

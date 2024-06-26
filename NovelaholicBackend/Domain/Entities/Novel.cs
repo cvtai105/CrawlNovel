@@ -26,9 +26,8 @@ namespace Domain.Entities
         [Column (TypeName = "decimal(3, 1)")]
         public decimal Rating { get; set; } 
         public bool IsHot { get; set; }
-
-        public List<Genre> Genres { get; set; } = new List<Genre>();
-        public List<Chapter> Chapters { get; set; } = new List<Chapter>();
-        public virtual List<Source> Sources { get; set; } = new List<Source>();
+        public List<Genre> Genres { get; set; } = [];
+        public List<Chapter> Chapters { get; set; } = [];
+        public virtual List<Source> Sources { get; set; } = [];
     }
 }

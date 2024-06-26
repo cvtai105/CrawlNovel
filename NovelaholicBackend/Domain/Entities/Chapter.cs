@@ -11,7 +11,9 @@ namespace Domain.Entities
         public int Number { get; set; }
         [Required]
         public int NovelId { get; set; }
+
+        //keyword virtual is used to enable lazy loading
         public virtual Novel Novel { get; set; } = new Novel();
-        public virtual ICollection<ChapterSource> ChapterSources { get; set; } = new List<ChapterSource>();
+        public virtual ICollection<ChapterSource> ChapterSources { get; set; } = [];
     }
 }

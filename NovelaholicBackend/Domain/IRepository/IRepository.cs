@@ -12,5 +12,7 @@ namespace Domain.IRepository
         INovelRepository NovelRepository { get; }
         IChapterSourceRepository  ChapterSourceRepository { get; }
         ISourceRepository SourceRepository { get; }
+        INovelSourceRepository NovelSourceRepository { get; }
+        INovelGenreRepository NovelGenreRepository { get; }
     }
 }

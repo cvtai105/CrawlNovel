@@ -10,6 +10,11 @@ namespace Repository
             throw new NotImplementedException();
         }
 
+        public Task AddGenres(IEnumerable<Genre> genres)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Genre> DeleteGenre(int id)
         {
             throw new NotImplementedException();

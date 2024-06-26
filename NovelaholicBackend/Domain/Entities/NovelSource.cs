@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities
 {
-    public class ChapterSource
+    public class NovelSource
     {
-        public int ChapterId { get; set; }
+        public int NovelId { get; set; }
         public int SourceId { get; set; }
         [Required]
-        public string ChapterUrl { get; set; } = String.Empty;
+        public string NovelUrl { get; set; } = String.Empty;
         [Required]
-        public Chapter Chapter { get; set; } = new Chapter();
+        public Novel Novel { get; set; } = new();
         public Source Source { get; set; } = new Source();
     }
 }

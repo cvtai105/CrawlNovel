@@ -15,11 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackGroundCrawler", "BackGr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocLnNetReader", "DocLnNetReader\DocLnNetReader.csproj", "{A0F48769-59AB-4A7B-B577-15355E516870}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpubConverter", "EpubConverter\EpubConverter.csproj", "{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightNovelVnReader", "LightNovelVnReader\LightNovelVnReader.csproj", "{9348A893-29EA-4F58-B45B-549BB068820C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfConverter", "PdfConverter\PdfConverter.csproj", "{718E4C65-AC25-492E-839F-EB4739CB5772}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

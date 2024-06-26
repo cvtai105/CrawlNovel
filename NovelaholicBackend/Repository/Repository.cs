@@ -17,5 +17,10 @@ namespace Repository
         public IChapterSourceRepository ChapterSourceRepository => new ChapterSourceRepository();
 
         public ISourceRepository SourceRepository => new SourceRepository();
+
+        public INovelSourceRepository NovelSourceRepository => new NovelSourceRepository();
+
+        public INovelGenreRepository NovelGenreRepository => new NovelGenreRepository();
     }
+
 }

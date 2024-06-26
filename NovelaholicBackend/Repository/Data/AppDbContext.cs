@@ -27,6 +27,6 @@ public class AppDbContext : DbContext
             .OwnsOne(s => s.HostURL);
 
         modelBuilder.Entity<Source>()
-            .OwnsOne(s => s.BooklistURL);
+            .OwnsOne(s => s.NovelListUrl);
     }
 }
