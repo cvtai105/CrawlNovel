@@ -1,14 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CrawlerTemplate.DTOs;
+using Domain.Entities;
 using ICrawler;
+
+//This class provide method to crawl genres, novels and hot novels
 
 namespace CrawlerTemplate.Base
 {
     public abstract class CrawlerBase : ICrawlGenres, ICrawlNovels, ICrawlHotNovels
     {
+        public abstract Source Source { get; protected set;}
         public static async Task<string> GetUrlData(string url)
         {
             using HttpClient client = new();
@@ -24,29 +23,31 @@ namespace CrawlerTemplate.Base
                 throw new InvalidOperationException("Error fetching data from the URL", e);
             }
         }
-        protected abstract string GenreUrl { get; set; } 
-        protected abstract string HotNovelListUrl { get; set; } 
 
         /// <summary>
         /// Url to get the list of novels sorted by update date
         /// </summary>
         /// <value></value>
-        protected abstract string NovelListUrl { get; set; } 
 
-        public async Task<IEnumerable<string>> GetGenres(){
-            string data = await GetUrlData(GenreUrl);
+        public async Task<IEnumerable<Genre>> GetGenres(){
+            string data = await GetUrlData(Source.GenreUrl);
             return ParseGenres(data);
         }
-        public async Task<IEnumerable<NovelInfoDTO>> GetHotNovels()
+        public async Task<IEnumerable<Novel>> GetHotNovels()
         {   
-            string data = await GetUrlData(HotNovelListUrl);
+            string data = await GetUrlData(Source.HotNovelUrl);
             var links = ParseHotNovelLinks(data);
-            
             return await GetNovels(links);
         }
+        public async Task<IEnumerable<Novel>> GetNovels()
+        {
+            string page = await GetUrlData(Source.NovelListUrl);
+            List<string> novelUrls = ParseNovelLinks(page);
 
-        public async Task<IEnumerable<NovelInfoDTO>> GetNovels(IEnumerable<string> urls){ 
-            var novelInfos = new List<NovelInfoDTO>();
+            return await GetNovels(novelUrls);
+        }
+        public async Task<IEnumerable<Novel>> GetNovels(IEnumerable<string> urls){ 
+            var novelInfos = new List<Novel>();
             foreach (var url in urls)
             {
                 string data = await GetUrlData(url);
@@ -56,38 +57,16 @@ namespace CrawlerTemplate.Base
             return novelInfos;
         }
 
+        protected abstract IEnumerable<Genre> ParseGenres(string data);
+
+        protected abstract Novel ParseNovelInfo(string data);
+
+        protected abstract List<string> ParseNovelLinks(string page);
+
         private IEnumerable<string> ParseHotNovelLinks(string data)
         {
             throw new NotImplementedException();
         }
-
-        public async Task<IEnumerable<NovelInfoDTO>> GetNovels()
-        {
-            string page = await GetUrlData(NovelListUrl);
-            List<string> novelUrls = ParseNovelLinks(page);
-
-            return await GetNovels(novelUrls);
-        }
-
-        private NovelInfoDTO ParseNovelInfo(string data)
-        {
-            throw new NotImplementedException();
-        }
-
-        private List<string> ParseNovelLinks(string page)
-        {
-            throw new NotImplementedException();
-        }
-
-        
-        protected IEnumerable<string> GetNovelUrls()
-        {
-            throw new NotImplementedException();
-        }
-
-        
-
-        protected abstract IEnumerable<string> ParseGenres(string data);
-        protected abstract IEnumerable<NovelInfoDTO> ParseHotNovels(string data);
+        protected abstract IEnumerable<Novel> ParseHotNovels(string data);
     }
 }

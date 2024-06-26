@@ -1,10 +1,9 @@
-
-using CrawlerTemplate.DTOs;
+using Domain.Entities;
 
 namespace ICrawler
 {
     public interface ICrawlHotNovels
     {
-        Task<IEnumerable<NovelInfoDTO>> GetHotNovels();
+        Task<IEnumerable<Novel>> GetHotNovels();
     }
 }

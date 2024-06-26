@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlerTemplate", "CrawlerTemplate\CrawlerTemplate.csproj", "{5A5E995D-0516-44FF-A2D6-BE5CACBF1FB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackGroundCrawler", "BackGroundCrawler\BackGroundCrawler.csproj", "{7C29114F-002D-47B9-9660-A21DC7A0470E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocLnNetReader", "DocLnNetReader\DocLnNetReader.csproj", "{A0F48769-59AB-4A7B-B577-15355E516870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpubConverter", "EpubConverter\EpubConverter.csproj", "{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightNovelVnReader", "LightNovelVnReader\LightNovelVnReader.csproj", "{9348A893-29EA-4F58-B45B-549BB068820C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfConverter", "PdfConverter\PdfConverter.csproj", "{718E4C65-AC25-492E-839F-EB4739CB5772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,26 @@ Global
 		{5A5E995D-0516-44FF-A2D6-BE5CACBF1FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A5E995D-0516-44FF-A2D6-BE5CACBF1FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A5E995D-0516-44FF-A2D6-BE5CACBF1FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C29114F-002D-47B9-9660-A21DC7A0470E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C29114F-002D-47B9-9660-A21DC7A0470E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C29114F-002D-47B9-9660-A21DC7A0470E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C29114F-002D-47B9-9660-A21DC7A0470E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F48769-59AB-4A7B-B577-15355E516870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F48769-59AB-4A7B-B577-15355E516870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F48769-59AB-4A7B-B577-15355E516870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F48769-59AB-4A7B-B577-15355E516870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD9D253-84CE-445A-BD6B-4EF92A7DD620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9348A893-29EA-4F58-B45B-549BB068820C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9348A893-29EA-4F58-B45B-549BB068820C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9348A893-29EA-4F58-B45B-549BB068820C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9348A893-29EA-4F58-B45B-549BB068820C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{718E4C65-AC25-492E-839F-EB4739CB5772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718E4C65-AC25-492E-839F-EB4739CB5772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718E4C65-AC25-492E-839F-EB4739CB5772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718E4C65-AC25-492E-839F-EB4739CB5772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

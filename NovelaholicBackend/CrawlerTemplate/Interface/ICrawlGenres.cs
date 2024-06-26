@@ -1,10 +1,9 @@
-
-using CrawlerTemplate.DTOs;
+using Domain.Entities;
 
 namespace ICrawler
 {
     public interface ICrawlGenres
     {
-        Task<IEnumerable<string>> GetGenres();
+        Task<IEnumerable<Genre>> GetGenres();
     }
 }
