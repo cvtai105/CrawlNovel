@@ -5,28 +5,7 @@ namespace Repository
 {
     public class ChapterRepository : IChapterRepository
     {
-
-        public Task<Chapter> AddChapter(Chapter chapter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Chapter> DeleteChapter(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Chapter> GetChapter(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Chapter>> GetChapters()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Chapter> UpdateChapter(Chapter chapter)
+        public Task AddNovelChapters(int novelId, List<Chapter> chapters)
         {
             throw new NotImplementedException();
         }

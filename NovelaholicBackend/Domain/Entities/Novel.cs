@@ -28,6 +28,15 @@ namespace Domain.Entities
         public bool IsHot { get; set; }
         public List<Genre> Genres { get; set; } = [];
         public List<Chapter> Chapters { get; set; } = [];
-        public virtual List<Source> Sources { get; set; } = [];
+        public void AscendingSortChapters(){
+            Chapters.Sort((c1, c2) => c1.Number - c2.Number);
+        }
+        public void DescendingSortChapters(){
+            Chapters.Sort((c1, c2) => c2.Number - c1.Number);
+        }
+        public bool IsEquals(Novel n2){
+            return VietnameseTitle == n2.VietnameseTitle;
+        }
+        public virtual List<NovelSource> NovelSources { get; set; } = [];
     }
 }
