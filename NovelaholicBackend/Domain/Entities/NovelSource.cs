@@ -5,7 +5,9 @@ namespace Domain.Entities
 {
     public class NovelSource
     {
+        [Required]
         public int NovelId { get; set; }
+        [Required]
         public int SourceId { get; set; }
         [Required]
         public string NovelUrl { get; set; } = String.Empty;

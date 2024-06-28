@@ -8,6 +8,6 @@ namespace Domain.IRepository
 {
     public interface INovelGenreRepository
     {
-        Task AddNovelGenres(int novelId, IEnumerable<Genre> genres);
+        Task<IEnumerable<NovelGenre>> AddNovelGenres(int novelId, IEnumerable<Genre> genres);
     }
 }

@@ -21,6 +21,11 @@ namespace Repository
         public INovelSourceRepository NovelSourceRepository => new NovelSourceRepository();
 
         public INovelGenreRepository NovelGenreRepository => new NovelGenreRepository();
+
+        public Task Save()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

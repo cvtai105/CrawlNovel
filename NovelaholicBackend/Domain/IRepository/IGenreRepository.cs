@@ -4,7 +4,7 @@ namespace Domain.IRepository
 {
     public interface IGenreRepository
     {
-        Task<Genre> GetGenres();
-        Task UpsertGenres(IEnumerable<Genre> genres);
+        Task<IEnumerable<Genre>> AddGenres(IEnumerable<Genre> newGenres);
+        Task<IEnumerable<Genre>> GetGenres();
     }
 }

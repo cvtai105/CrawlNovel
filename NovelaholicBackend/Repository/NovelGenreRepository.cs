@@ -9,7 +9,7 @@ namespace Repository
 {
     public class NovelGenreRepository : INovelGenreRepository
     {
-        public Task AddNovelGenres(int id, IEnumerable<Genre> genres)
+        public Task<IEnumerable<NovelGenre>> AddNovelGenres(int novelId, IEnumerable<Genre> genres)
         {
             throw new NotImplementedException();
         }

@@ -5,7 +5,12 @@ namespace Repository
 {
     public class SourceRepository : ISourceRepository
     {
-        public Task UpsertSource(Source source)
+        public Task<Source> AddSource(Source source)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Source>> GetSources()
         {
             throw new NotImplementedException();
         }
